@@ -2,7 +2,7 @@ The Rspec Book の写経コードです。
 http://www.amazon.co.jp/RSpec-Book-Professional-Ruby-Series/dp/4798121932/
 
 モジュールのバージョンは書籍の推奨環境に合わせます  
-ruby 1.8.7 
+ruby 1.8.7  
 rspec-2.0.0  
 cucumber-0.9.2  
 
