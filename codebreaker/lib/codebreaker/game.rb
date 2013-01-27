@@ -23,14 +23,14 @@ module Codebreaker
 			@secret, @guess = secret, guess
 		end
 
-		def extra_match_count
-			extra_match_count = 0
+		def exact_match_count
+			exact_match_count = 0
 			(0..3).each do |index|
-				if extra_match?(index)
-					extra_match_count += 1
+				if exact_match?(index)
+					exact_match_count += 1
 				end
 			end
-			extra_match_count
+			exact_match_count
 		end
 
 		def number_match_count
@@ -43,12 +43,12 @@ module Codebreaker
 			number_match_count
 		end
 
-		def extra_match?( index)
+		def exact_match?( index)
 			@guess[index] == @secret[index]
 		end
 
 		def number_match?( index)
-			@secret.include?(@guess[index]) && !extra_match?(index)
+			@secret.include?(@guess[index]) && !exact_match?(index)
 		end
 
 	end
