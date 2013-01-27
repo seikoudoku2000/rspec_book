@@ -29,7 +29,7 @@ Feature: code-breaker submits guess
 		Scenarios: 3 number correct
 			| code | guess | mark | 
 			| 1234 | 5234  | +++  | 
-			| 1234 | 5134  | +--  | 
+			| 1234 | 5134  | ++-  | 
 			| 1234 | 5124  | +--  | 
 			| 1234 | 5123  | ---  | 
 
